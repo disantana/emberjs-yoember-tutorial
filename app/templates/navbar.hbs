@@ -19,3 +19,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+{{!--CRIAR partial OU COMPONENT TO DISPLAY SUCCESS MESSAGE --}}
+{{#if responseMessage}}
+   <div class="alert alert-success">{{responseMessage}}</div>
+{{/if}}
