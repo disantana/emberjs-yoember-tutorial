@@ -1,6 +1,5 @@
 import Controller from '@ember/controller';
-import { observer } from '@ember/object';
-import { match, not, gte } from '@ember/object/computed';
+import { match, not } from '@ember/object/computed';
 
 export default Controller.extend({
   message:'',

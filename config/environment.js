@@ -1,11 +1,27 @@
 'use strict';
 
 module.exports = function(environment) {
+  
   let ENV = {
     modulePrefix: 'library-app',
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: 'AIzaSyDMi2gbwlsQEbZvqvB4IgQGpQJoeWieP5A',
+      authDomain: 'emberjs-yoember-tutorial.firebaseapp.com',
+      databaseURL: 'https://emberjs-yoember-tutorial.firebaseio.com',
+      storageBucket: '',
+    },
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
