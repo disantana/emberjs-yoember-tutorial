@@ -12,7 +12,7 @@ export default Controller.extend({
   actions: {
    saveInvitation() {
      alert(`Saving of the following email address is in progress: ${this.get('emailAddress')}`);
-     this.set('responseMessage', 'Thank you! Your email was save. ');
+     this.set('responseMessage', 'We got your message and we’ll get in touch soon');
      this.set('emailAddress', '');
      this.set('message', '');
    }
